@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{5B3C48DD-9E49-46C5-9622-46D89A6ACEC4}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>7.2</LangVersion>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.2</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.2</LangVersion>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="irrKlang.NET4, Version=1.0.6617.18847, Culture=neutral, PublicKeyToken=a854741bd80517c7, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\irrKlang-64bit-1.6.0\bin\dotnet-4-64\irrKlang.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MP3Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsApplication1.Properties\Resources.cs" />
+    <Compile Include="WindowsFormsApplication1.Properties\Settings.cs" />
+    <Compile Include="WindowsFormsApplication1\Afmagt.cs" />
+    <Compile Include="WindowsFormsApplication1\Alien.cs" />
+    <Compile Include="WindowsFormsApplication1\Bolledej.cs" />
+    <Compile Include="WindowsFormsApplication1\BolleHeaven.cs" />
+    <Compile Include="WindowsFormsApplication1\Bollemælk.cs" />
+    <Compile Include="WindowsFormsApplication1\Bongo.cs" />
+    <Compile Include="WindowsFormsApplication1\Børneleg.cs" />
+    <Compile Include="WindowsFormsApplication1\Børnetid.cs" />
+    <Compile Include="WindowsFormsApplication1\FireBørn.cs" />
+    <Compile Include="WindowsFormsApplication1\FirePower.cs" />
+    <Compile Include="WindowsFormsApplication1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowsFormsApplication1\ImageClass.cs" />
+    <Compile Include="WindowsFormsApplication1\Jango.cs" />
+    <Compile Include="WindowsFormsApplication1\Jingo.cs" />
+    <Compile Include="WindowsFormsApplication1\Jonga.cs" />
+    <Compile Include="WindowsFormsApplication1\Jongo.cs" />
+    <Compile Include="WindowsFormsApplication1\JoyRomeo.cs" />
+    <Compile Include="WindowsFormsApplication1\Juklas.cs" />
+    <Compile Include="WindowsFormsApplication1\Lingo.cs" />
+    <Compile Include="WindowsFormsApplication1\Mood.cs" />
+    <Compile Include="WindowsFormsApplication1\Movement.cs" />
+    <Compile Include="WindowsFormsApplication1\PlotCourse.cs" />
+    <Compile Include="WindowsFormsApplication1\Program.cs" />
+    <Compile Include="WindowsFormsApplication1\Remember.cs" />
+    <Compile Include="WindowsFormsApplication1\Spaceship1.cs" />
+    <Compile Include="WindowsFormsApplication1\Tegneserie.cs" />
+    <Compile Include="WindowsFormsApplication1\Token.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WindowsFormsApplication1\Form1.resx" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.136702__hoscalegeek__laser-zap.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.144549__kasa90__loop5.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.152973__kasa90__plingy.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.157886__setuniman__funny-bassoon-0p-17bs4.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.168818__11linda__sexy-oh-baby.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.172712__gitanki__sheep.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.18870__zippi1__sound-alien7.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.35464__jobro__explosion-7.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.86026__harpoyume__explosion-3.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.93846__cgeffex__huge-explosion6.wav" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.ikpMP3.dll" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.2tempo.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.airforce.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.airforcethought.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Alien2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alieninvader.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alieninvader2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alieninvader3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alieninvader4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alieninvader5.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alienman.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alienman2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alienman3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alienman4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alienman5.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alienman6.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.alienman7.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.angel.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.atom.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.atom2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.buddy.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.captain.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Classicrobot.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.cloud.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.cloud2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.cloud3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.dino.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.dino2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.dino3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.donkey.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.dragon.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Elsestænder.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.exclamation.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.explosion.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.explosion2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.explosion3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.explosion4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.eyerobot.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.fish.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.fish2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.fish3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.flask.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.flask2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.flask3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.flask4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.forceToReckonWith.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.galaxy.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.galaxy2.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.galaxy3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.galaxy4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.glyph.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.graph.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.graph2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.heart.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.heart2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.heartskull.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Hejhejigen.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Hejjegergod.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Herigen.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.icarus.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.icarus2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.icarus3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.icarus4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.icarus5.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.insect_robot.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.invader.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.justice.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Kaspersliv.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Makihere.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Martinigen.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Martinshjel.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.militaryrobot.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.molecule.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.monkey.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.monkey2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.monkey3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Morerdejlig.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Mortenher.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Mortensbedstechance.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Mortentænker.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.mowglibarn.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.nebula.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.nebula2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.nebula3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.nibble-icon.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.paint.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.parrot.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.parrot2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.parrot3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.PatrolShip.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.peace.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.peacealien.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.pig.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Pill-icon.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.pit.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.pit2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.pit3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.pit4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.pit5.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.pit6.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Planet.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.planet2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.planet3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.planet4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.planet5.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.playMeNow.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.protein.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.protein2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.rain.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.rain2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.robot.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.robot2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.robot3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.satellite.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Satellite2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.satellite3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.satellite4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.satellite5.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene10.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene11.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene2.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene4.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene5.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene6.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene7.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene8.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.scene9.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.sejetanker.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.shark.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.sheep.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.skullandguns.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.soldier.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.soldier2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.soldier3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.sonicboom.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Spaceship.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.SpaceShip2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.spaceship3.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.spaceship3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.spaceship4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.spaceship5.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.speakerMeNot.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.speakerscorner.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.superrobot.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.thinkme.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.Tinevar.jpg" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.troll.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.turret.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.turret2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.uglything.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.voltage.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.voltage2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.voltage3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.wasp.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.wasp2.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.wasp3.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.wasp4.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.waspboss.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.whale.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.whatYouUpTo.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.world.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.youreAlright.png" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.irrKlang.NET4.dll" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ascenzion-getonthefunktrain.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ascenzion-needfulthings.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.bleedingskies-entrosoletyoullnevergetoutaliveinstr.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.dmitebeats-dmitebeatsrebellionfreedl.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.eddrury-jordanstheme.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.eddrury-mistystheme.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ericrfairhurst-catch22.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---Alien-Wars.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---Blue-sky.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---WhiteRiver.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-fourfortyfour.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-pink.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-theangelssing.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-whoisincontrolhousemix.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.sodymanic-tosmooth.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.swampmanthemachine-fadetoblue.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
