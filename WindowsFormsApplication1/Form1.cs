@@ -11,7 +11,7 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Timers;
 using System.Windows.Forms;
-using IrrKlang;
+
 
 
 namespace WindowsFormsApplication1
@@ -35,7 +35,6 @@ namespace WindowsFormsApplication1
 
 		public int cula = 200;
 
-		private string currentMp3 = "Math.mp3";
 
 		private int cola;
 
@@ -75,16 +74,8 @@ namespace WindowsFormsApplication1
 
 		private string[] resourse = new string[16];
 
-		private ISoundEngine bootMeUp;
-
-		protected override void Dispose(bool disposing)
-		{
-			if (disposing && components != null)
-			{
-				components.Dispose();
-			}
-			base.Dispose(disposing);
-		}
+		
+		
 
 		private void InitializeComponent()
 		{
@@ -184,8 +175,7 @@ namespace WindowsFormsApplication1
 		public Form1()
 		{
 			InitializeComponent();
-			unpackSound();
-			bootMeUp = new ISoundEngine();
+			
 			gfx = panel1.CreateGraphics();
 			timer1 = new System.Timers.Timer(8000.0);
 			timer1.AutoReset = false;
@@ -388,23 +378,9 @@ namespace WindowsFormsApplication1
 			panel1.Size = base.ClientSize;
 		}
 
-		private void FormClosingMeDown(object sender, FormClosingEventArgs e)
-		{
-			TryToDelete("Math.mp3");
-		}
+		
 
-		private static bool TryToDelete(string f)
-		{
-			try
-			{
-				File.Delete(f);
-				return true;
-			}
-			catch (IOException)
-			{
-				return false;
-			}
-		}
+		
 
 		private void Loadup(object sender, EventArgs e)
 		{
@@ -427,9 +403,7 @@ namespace WindowsFormsApplication1
 			}
 		}
 
-		internal void brunstigCookie(Børnetid børnetid, int p)
-		{
-		}
+		
 
 		public void newJongo()
 		{
@@ -454,105 +428,7 @@ namespace WindowsFormsApplication1
 			resourse[13] = (string)comboBox1.Items[13];
 			resourse[14] = (string)comboBox1.Items[14];
 			resourse[15] = (string)comboBox1.Items[15];
-			for (int i = 0; i < 15; i++)
-			{
-				Stream manifestResourceStream = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Music." + resourse[i]);
-				if (!File.Exists(resourse[i]))
-				{
-					using (Stream output = File.Create(resourse[i]))
-					{
-						CopyStream(manifestResourceStream, output);
-					}
-				}
-			}
-			Stream manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.109753__soundcollectah__tre-hit-long.wav");
-			if (!File.Exists("109753__soundcollectah__tre-hit-long.wav"))
-			{
-				using (Stream output2 = File.Create("109753__soundcollectah__tre-hit-long.wav"))
-				{
-					CopyStream(manifestResourceStream2, output2);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.35464__jobro__explosion-7.wav");
-			if (!File.Exists("35464__jobro__explosion-7.wav"))
-			{
-				using (Stream output3 = File.Create("35464__jobro__explosion-7.wav"))
-				{
-					CopyStream(manifestResourceStream2, output3);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.86026__harpoyume__explosion-3.wav");
-			if (!File.Exists("86026__harpoyume__explosion-3.wav"))
-			{
-				using (Stream output4 = File.Create("86026__harpoyume__explosion-3.wav"))
-				{
-					CopyStream(manifestResourceStream2, output4);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.93846__cgeffex__huge-explosion6.wav");
-			if (!File.Exists("93846__cgeffex__huge-explosion6.wav"))
-			{
-				using (Stream output5 = File.Create("93846__cgeffex__huge-explosion6.wav"))
-				{
-					CopyStream(manifestResourceStream2, output5);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.136702__hoscalegeek__laser-zap.wav");
-			if (!File.Exists("136702__hoscalegeek__laser-zap.wav"))
-			{
-				using (Stream output6 = File.Create("136702__hoscalegeek__laser-zap.wav"))
-				{
-					CopyStream(manifestResourceStream2, output6);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.144549__kasa90__loop5.wav");
-			if (!File.Exists("144549__kasa90__loop5.wav"))
-			{
-				using (Stream output7 = File.Create("144549__kasa90__loop5.wav"))
-				{
-					CopyStream(manifestResourceStream2, output7);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.152973__kasa90__plingy.wav");
-			if (!File.Exists("152973__kasa90__plingy.wav"))
-			{
-				using (Stream output8 = File.Create("152973__kasa90__plingy.wav"))
-				{
-					CopyStream(manifestResourceStream2, output8);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.18870__zippi1__sound-alien7.wav");
-			if (!File.Exists("18870__zippi1__sound-alien7.wav"))
-			{
-				using (Stream output9 = File.Create("18870__zippi1__sound-alien7.wav"))
-				{
-					CopyStream(manifestResourceStream2, output9);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.Effects.157886__setuniman__funny-bassoon-0p-17bs4.wav");
-			if (!File.Exists("157886__setuniman__funny-bassoon-0p-17bs4.wav"))
-			{
-				using (Stream output10 = File.Create("157886__setuniman__funny-bassoon-0p-17bs4.wav"))
-				{
-					CopyStream(manifestResourceStream2, output10);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.ikpMP3.dll");
-			if (!File.Exists("ikpMP3.dll"))
-			{
-				using (Stream output11 = File.Create("ikpMP3.dll"))
-				{
-					CopyStream(manifestResourceStream2, output11);
-				}
-			}
-			manifestResourceStream2 = GetType().Assembly.GetManifestResourceStream("WindowsFormsApplication1.Resources.irrKlang.NET4.dll");
-			if (!File.Exists("irrKlang.NET4.dll"))
-			{
-				using (Stream output12 = File.Create("irrKlang.NET4.dll"))
-				{
-					CopyStream(manifestResourceStream2, output12);
-				}
-			}
+			
 		}
 
 		public void playMP3()
@@ -560,15 +436,7 @@ namespace WindowsFormsApplication1
 			bootMeUp.Play2D(resourse[junkie.Next(15)]);
 		}
 
-		public static void CopyStream(Stream input, Stream output)
-		{
-			byte[] array = new byte[8192];
-			int count;
-			while ((count = input.Read(array, 0, array.Length)) > 0)
-			{
-				output.Write(array, 0, count);
-			}
-		}
+		
 
 		private void panel1_Paint(object sender, PaintEventArgs e)
 		{

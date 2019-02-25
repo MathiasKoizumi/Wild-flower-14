@@ -57,10 +57,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="irrKlang.NET4, Version=1.0.6617.18847, Culture=neutral, PublicKeyToken=a854741bd80517c7, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Downloads\irrKlang-64bit-1.6.0\bin\dotnet-4-64\irrKlang.NET4.dll</HintPath>
-    </Reference>
     <Reference Include="System.Drawing">
       <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
     </Reference>
@@ -121,7 +117,6 @@
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.35464__jobro__explosion-7.wav" />
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.86026__harpoyume__explosion-3.wav" />
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Effects.93846__cgeffex__huge-explosion6.wav" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.ikpMP3.dll" />
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.2tempo.png" />
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.airforce.png" />
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.airforcethought.png" />
@@ -285,23 +280,54 @@
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.whatYouUpTo.png" />
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.world.png" />
     <EmbeddedResource Include="WindowsFormsApplication1\Resources.Images.youreAlright.png" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.irrKlang.NET4.dll" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ascenzion-getonthefunktrain.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ascenzion-needfulthings.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.bleedingskies-entrosoletyoullnevergetoutaliveinstr.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.dmitebeats-dmitebeatsrebellionfreedl.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.eddrury-jordanstheme.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.eddrury-mistystheme.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ericrfairhurst-catch22.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---Alien-Wars.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---Blue-sky.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---WhiteRiver.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-fourfortyfour.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-pink.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-theangelssing.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-whoisincontrolhousemix.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.sodymanic-tosmooth.mp3" />
-    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.swampmanthemachine-fadetoblue.mp3" />
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ascenzion-getonthefunktrain.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ascenzion-needfulthings.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.bleedingskies-entrosoletyoullnevergetoutaliveinstr.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.dmitebeats-dmitebeatsrebellionfreedl.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.eddrury-jordanstheme.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.eddrury-mistystheme.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.ericrfairhurst-catch22.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---Alien-Wars.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---Blue-sky.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.Mathias-Koizumi---WhiteRiver.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-fourfortyfour.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-pink.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-theangelssing.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.phroneeino-whoisincontrolhousemix.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.sodymanic-tosmooth.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApplication1\Resources.Music.swampmanthemachine-fadetoblue.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
